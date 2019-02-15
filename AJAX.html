@@ -1,82 +1,85 @@
 <!DOCTYPE>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <title>CIT 261 Topic Main Page</title>
-        <meta name="description" content="Main page for CIT 261">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="CSS/normalization.css" rel="stylesheet">
-        <link href="CSS/csssmall.css" rel="stylesheet">
-        <link href="CSS/cssMed.css" rel="stylesheet">
-        <link href="CSS/cssLarge.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda|Kalam" rel="stylesheet">
-    </head>
-    <body>
-        <header>
 
-        </header>
+<head>
+    <meta charset="utf-8">
+    <title>CIT 261 Topic Main Page</title>
+    <meta name="description" content="Main page for CIT 261">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/normalization.css" rel="stylesheet">
+    <link href="CSS/csssmall.css" rel="stylesheet">
+    <link href="CSS/cssMed.css" rel="stylesheet">
+    <link href="CSS/cssLarge.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda|Kalam" rel="stylesheet">
+</head>
 
-        <nav class="clearfix">
-            <button id="down" onclick="toggleMenu()">&#9776;</button>
-            <ul id="menuNav" class="hide">
-                <li><a href="index.html">Main Page</a></li>
-                <li><a href="JavaScript.html">JavaScript</a></li>
-                <li><a href="JavaScriptObjects.html">JavaScript Objects</a></li>
-                <li><a href="JSON.html">JSON</a></li>
-                <li><a href="AJAX.html">AJAX</a></li>
-                <li><a href="LocalStorage.html">Local Storage</a></li>
-                <li><a href="DOM.html">Document Object Model</a></li>
-                <li><a href="CSS3JavaScript.html">CSS3 using JavaScript</a></li>
-                <li><a href="">CSS3 Transitions, Animations, and Transformations</a></li>
-                <li><a href="JavaScriptEvents.html">JavaScript Events</a></li>
-                <li><a href="HTML5Media.html">HTML5 Tags for Media</a></li>
-                <li><a href="CSS3Animations.html">CSS3 Animations</a></li>
-                <li><a href="CSS3Transformations.html">CSS3 Transformations</a></li>
-                <li><a href="CSS3Transitions.html">CSS3 Transitions</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
 
-        <main>
-            <h4>This page will have a form on it</h4>
-            <h2>This form will be populated from a API<br>
-                The form will take selections from the <br>
-                user to determine the output. The Selections <br>
-                will be added by DOM manipulation as each is confirmed.</h2>
-        </main>
-        <form>
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label>Name: <input type="text" name="name" id="fullName" placeholder="John Smith"></label><br>
-                <label>Email: <input type="email" name="email" id="email" placeholder="user@domain.com"></label><br>
-                <label>Phone: <input type="tel" name="phone" id="phone#" placeholder="1234567890"></label><br>
-                <label>Address: <input type="text" name="address" id="address" placeholder="Street Number"></label><br>
-                <label>City: <input type="text" name="city" id="city" placeholder="Town"></label><br>
-                <label>State: <input type="text" name="state" id="state" placeholder="'Texas' 'TX'"></label><br>
-                <label>ZipCode: <input type="number" name="zipCode" id="zipCode" placeholder="12345"></label><br>
-            </fieldset>
-            <fieldset id="formSelect">
-                <legend>Information Request</legend>
-                <label>Please select the the open source: <select id="s0">
-                    </select></label><button type="submit" formtarget="forQue" name="addButt">Add Option</button>
-                <label id="l7"></label>
-                <label id="l8"></label>
-                <label id="l9"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Return Format</legend>
-                <iframe name="forQue">
+    </header>
 
-                </iframe>
-            </fieldset>
-        </form>
+    <nav class="clearfix">
+        <button id="down" onclick="toggleMenu()">&#9776;</button>
+        <ul id="menuNav" class="hide">
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+            <li><a href="JavaScriptObjects.html">JavaScript Objects</a></li>
+            <li><a href="JSON.html">JSON</a></li>
+            <li><a href="AJAX.html">AJAX</a></li>
+            <li><a href="LocalStorage.html">Local Storage</a></li>
+            <li><a href="DOM.html">Document Object Model</a></li>
+            <li><a href="CSS3JavaScript.html">CSS3 using JavaScript</a></li>
+            <li><a href="">CSS3 Transitions, Animations, and Transformations</a></li>
+            <li><a href="JavaScriptEvents.html">JavaScript Events</a></li>
+            <li><a href="HTML5Media.html">HTML5 Tags for Media</a></li>
+            <li><a href="CSS3Animations.html">CSS3 Animations</a></li>
+            <li><a href="CSS3Transformations.html">CSS3 Transformations</a></li>
+            <li><a href="CSS3Transitions.html">CSS3 Transitions</a></li>
+        </ul>
+    </nav>
 
-        <footer>
-            <a href="index.html">Main Page</a>
-        </footer>
+    <main>
+        <h4>This page will have a form on it</h4>
+        <h2>This form will be populated from a API<br>
+            The form will take selections from the <br>
+            user to determine the output. The Selections <br>
+            will be added by DOM manipulation as each is confirmed.</h2>
+    </main>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name: <input type="text" name="name" id="fullName" placeholder="John Smith"></label><br>
+            <label>Email: <input type="email" name="email" id="email" placeholder="user@domain.com"></label><br>
+            <label>Phone: <input type="tel" name="phone" id="phone#" placeholder="1234567890"></label><br>
+            <label>Address: <input type="text" name="address" id="address" placeholder="Street Number"></label><br>
+            <label>City: <input type="text" name="city" id="city" placeholder="Town"></label><br>
+            <label>State: <input type="text" name="state" id="state" placeholder="'Texas' 'TX'"></label><br>
+            <label>ZipCode: <input type="number" name="zipCode" id="zipCode" placeholder="12345"></label><br>
+        </fieldset>
+        <fieldset id="formSelect">
+            <legend>Information Request</legend>
+            <label>Please select the the open source: <select id="s0">
+                </select></label><button type="submit" formtarget="forQue" name="addButt">Add Option</button>
+            <label id="l7"></label>
+            <label id="l8"></label>
+            <label id="l9"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Return Format</legend>
+            <iframe name="forQue">
 
-        <script src="Scripts/fonts.js"></script>
-        <script src="Scripts/togglemenu.js"></script>
-        <script src="Scripts/active.js"></script>
-        <script src="Scripts/form.js"></script>
-    </body>
+            </iframe>
+        </fieldset>
+    </form>
+
+    <footer>
+        <a href="index.html">Main Page</a>
+    </footer>
+
+    <script src="Scripts/active.js"></script>
+    <script src="Scripts/fonts.js"></script>
+    <script src="Scripts/togglemenu.js"></script>
+    <script src="Scripts/form.js"></script>
+</body>
+
 </html>
