@@ -1,10 +1,8 @@
 var jsImage = document.getElementById("tutReb");
-var pos = 0;
-var id = setInterval(frame, 5);
 
 function onToch() {
     var pos = 0;
-    var id = setInterval(frame, 5);
+    var id = setInterval(frame, 10);
     function frame() {
         if (pos == 350) {
             clearInterval(id);
