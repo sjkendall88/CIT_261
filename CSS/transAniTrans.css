@@ -1,0 +1,29 @@
+/* CSS file for Transitions, Animations, and Transformations */
+/* Animations */
+#marqFrame {
+    border: 3px solid blue;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+@keyframes Marq {
+    from {margin-right: -120%;}
+    to {margin-left: -120%;}
+}
+
+#noMarq {
+    animation-name: Marq;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#noMarq:hover {
+    animation-play-state: paused;
+}
+
+/* Transitions */
+
+
+/* Transformation */
+
