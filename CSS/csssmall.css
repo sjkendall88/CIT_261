@@ -50,7 +50,7 @@ nav ul li a {
     padding: .8em 2%;
     text-decoration: none;
     color: rgba(255,255,255,0.8);
-    border-top: 1px solid rgba(0,0,0,0,.3);
+    border: 1px solid rgba(0,0,0,0,.3);
 }
 
 nav ul li {
@@ -59,6 +59,8 @@ nav ul li {
 
 nav ul li a:hover {
     background-color: rgba(255,255,255,0.3);
+    transition: background-color .7s ease-in-out;
+    transform: scale(2,2);
 }
 
 nav ul li a.active {

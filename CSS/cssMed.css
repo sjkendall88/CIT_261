@@ -12,13 +12,13 @@
 
     nav button {display: none;}
 
-    nav ul {margin-left: 2%;}
+    nav ul {margin: 0;}
 
     nav ul.hide {display: none; }
 
-    nav ul li { display: inline-flex; }
+    nav ul li { display: inline-flex; padding: 0; margin: 0;}
 
-    nav ul li a {display: flex;  border-left: 1px solid rgba(0,0,0,0.3); padding: .6rem 1rem; width: 100%; margin: 0;}
+    nav ul li a {display: flex;  border: 2px solid rgba(0,0,0,0.3); padding: .4rem .4rem; width: 100%; margin: 0;}
 
     .grid {margin: .5rem;
         display: grid;

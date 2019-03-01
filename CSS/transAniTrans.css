@@ -2,13 +2,14 @@
 /* Animations */
 #marqFrame {
     border: 3px solid blue;
+    border-radius: 30px;
     width: 98%;
     margin: auto;
     overflow: hidden;
 }
 @keyframes Marq {
-    from {margin-right: -120%;}
-    to {margin-left: -120%;}
+    from {margin-right: -200%;}
+    to {margin-left: -200%;}
 }
 
 #noMarq {
@@ -24,6 +25,27 @@
 
 /* Transitions */
 
+.div {
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    background-color: aqua;
+    border: .5rem solid orange;
+    border-radius: 20%;
+    transition: width 2s, height 2s, background-color 1s;
+}
+#1{
+}
+div:hover {
+    width: 15rem;
+    height: 6rem;
+    background-color: pink;
+    transform: skewY(30deg);
+}
 
 /* Transformation */
 
+#coinSpin:hover {
+    transition: transform 3s;
+    transform: rotateY(360deg);
+}

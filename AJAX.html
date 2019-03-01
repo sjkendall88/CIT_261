@@ -6,6 +6,7 @@
     <title>CIT 261 Topic Main Page</title>
     <meta name="description" content="Main page for CIT 261">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/transAniTrans.css" rel="stylesheet">
     <link href="CSS/normalization.css" rel="stylesheet">
     <link href="CSS/csssmall.css" rel="stylesheet">
     <link href="CSS/cssMed.css" rel="stylesheet">
@@ -39,11 +40,9 @@
     </nav>
 
     <main>
-        <h4>This page will have a form on it</h4>
-        <h2>This form will be populated from a API<br>
-            The form will take selections from the <br>
-            user to determine the output. The Selections <br>
-            will be added by DOM manipulation as each is confirmed.</h2>
+        <div id="marqFrame">
+            <h1 id="noMarq">This page will have a form on it. This form will be populated from a API. The form will take selections from the user to determine the output. The Selections will be added by DOM manipulation as each is confirmed.</h1>
+        </div>
     </main>
     <form>
         <fieldset>
@@ -58,17 +57,15 @@
         </fieldset>
         <fieldset id="formSelect">
             <legend>Information Request</legend>
-            <label>Please select the the open source: <select id="s0">
-                </select></label><button type="submit" formtarget="forQue" name="addButt">Add Option</button>
+            <label>Please select the the open source Program: <select id="s0" name="selcPro">
+                </select></label>
+            <input type="button" value="Add Option" onclick="selcList(this.form.selcPro);">
+            <br><br>Here are the selected Programs:<br><select id="s1" size="6">
+                <option> - Your Program Selection -</option>
+            </select>
             <label id="l7"></label>
             <label id="l8"></label>
             <label id="l9"></label>
-        </fieldset>
-        <fieldset>
-            <legend>Return Format</legend>
-            <iframe name="forQue">
-
-            </iframe>
         </fieldset>
     </form>
 
