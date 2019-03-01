@@ -36,7 +36,7 @@
 }
 #1{
 }
-div:hover {
+.div:hover {
     width: 15rem;
     height: 6rem;
     background-color: pink;
