@@ -22,7 +22,7 @@ function jFunc(selc) {
     }
     // Checks the input from button to call correct function
     function check() {
-        if (selc = "outInf") {
+        if (selc == "outInf") {
             inPers.info();
         } else {
             inPers.fullName();
