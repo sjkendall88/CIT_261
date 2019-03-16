@@ -1,12 +1,16 @@
 function jFunc(selc) {
     // Variables
-    var infName, inlName, inage, outPut, outInf, outNam, selc, err;
+    var infName, inlName, inAge, inEye, inHair, inHeight, inWeight, outPut, outInf, outNam, selc, err;
     // Get variable values
     infName = document.getElementById("fName").value;
     inlName = document.getElementById("lName").value;
-    inage = document.getElementById("age").value;
+    inAge = document.getElementById("age").value;
+    inEye = document.getElementById("eye").value;
+    inHair = document.getElementById("hair").value;
+    inHeight = document.getElementById("height").value;
+    inWeight = document.getElementById("weight").value;
 
-    // object created with attributes and functions
+    /* object created with attributes and functions
     var inPers = {
         firstName: infName,
         lastName: inlName,
@@ -20,8 +24,25 @@ function jFunc(selc) {
             return outPut;
         }
     }
+    */
+
+
+    function inPers(first, last, age, eye, hair, height, weight){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eye = eye;
+        this.hair = hair;
+        this.height = height;
+        this.weight = weight;
+    }
+
     // Checks the input from button to call correct function
     function check() {
+
+        // Create object
+
+
         if (selc == "outInf") {
             inPers.info();
         } else {
