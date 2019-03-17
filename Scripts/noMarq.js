@@ -1,6 +1,0 @@
-var marq;
-
-marq {
-
-
-}

@@ -1,0 +1,18 @@
+#marqFrame {
+    border: 3px solid blue;
+    border-radius: 30px;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+@keyframes spin {
+    transition: transform 3s;
+    transform: rotateY(360deg);
+}
+
+#imgSpin {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
