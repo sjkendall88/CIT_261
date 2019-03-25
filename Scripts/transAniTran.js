@@ -1,5 +1,6 @@
 //Script for animation
-var menu, pare, chil, indName = "CSS/jsTransAniTrans.css", indName1 ="stylesheet";
+var menu, pare, chil, indName = "CSS/jsTransAniTrans.css",
+    indName1 = "stylesheet";
 
 pare = document.head;
 chil = document.getElementById('s0');
@@ -31,24 +32,21 @@ elm.appendChild(tex1);
 // add element to form <select>
 pare.insertBefore(elm, chil);
 
-/*
 function spin() {
     var i = 0;
-    while (i < 2) {
-        // Set animation using document
-        var icAn = document.getElementById("imgSpin");
-        var n = i % 2;
-        if (n != 0) {
+    var icAn = document.getElementById("imgSpin");
+    icAn.class = "imgSpin";
+//    while (i < 2) {
+//        // Set animation using document
+//        var n = i % 2;
+//        if (n != 0) {
 //            icAn.style.transition = "transform 3s";
 //            icAn.style.transform = "rotateY(360deg)";
-            var i = 0;
-        } else {
+//            var i = 0;
+//        } else {
 //            icAn.style.transition = "";
 //            icAn.style.transform = "";
-            i++;
-        }
-    }
+//            i++;
+//        }
+//    }
 }
-*/
-
-

@@ -10,7 +10,7 @@
     transform: rotateY(360deg);
 }
 
-#imgSpin {
+.imgSpin {
     animation-name: spin;
     animation-duration: 3s;
     animation-timing-function: linear;

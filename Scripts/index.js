@@ -46,36 +46,43 @@ function addFam() {
         obj = JSON.stringify(mySpouse);
         console.log(obj);
         localStorage.setItem(mySpouse.fName, obj);
+        famMem = mySpouse.fName;
     } else if (famMem == "myFather") {
         myFather = new inPers(fName, lName, birthDay, eMail, phone, address, city, state, zipCode);
         obj = JSON.stringify(myFather);
         console.log(obj);
         localStorage.setItem(myFather.fName, obj);
+        famMem = myFather.fName;
     } else if (famMem == "myMother") {
         myMother = new inPers(fName, lName, birthDay, eMail, phone, address, city, state, zipCode);
         obj = JSON.stringify(myMother);
         console.log(obj);
         localStorage.setItem(myMother.fName, obj);
+        famMem = myMother.fName;
     } else if (famMem == "myBrother") {
         myBrother = new inPers(fName, lName, birthDay, eMail, phone, address, city, state, zipCode);
         obj = JSON.stringify(myBrother);
         console.log(obj);
         localStorage.setItem(myBrother.fName, obj);
+        famMem = myBrother.fName;
     } else if (famMem == "mySister") {
         mySister = new inPers(fName, lName, birthDay, eMail, phone, address, city, state, zipCode);
         obj = JSON.stringify(mySister);
         console.log(obj);
         localStorage.setItem(mySister.fName, obj);
+        famMem = mySister.fName;
     } else if (famMem == "mySon") {
         mySon = new inPers(fName, lName, birthDay, eMail, phone, address, city, state, zipCode);
         obj = JSON.stringify(mySon);
         console.log(obj);
         localStorage.setItem(mySon.fName, obj);
+        famMem = mySon.fName;
     } else if (famMem == "myDaughter") {
         mySister = new inPers(fName, lName, birthDay, eMail, phone, address, city, state, zipCode);
         obj = JSON.stringify(mySister);
         console.log(obj);
         localStorage.setItem(mySister.fName, obj);
+        famMem = myDaughter.fName;
     }
     //    Get the name of keys in local storage
     keyString = [];

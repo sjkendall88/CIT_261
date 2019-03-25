@@ -1,5 +1,4 @@
-var obj, keyName, optList, fName, lName, birthDay, eMail, phone, address, city, state, zipCode, famMem, famMemC, myFamily, mySpouse, mySelf, myFather, myMother, myBrother, mySister, mySon, myDaughter, numOfKeys, getFamName, userList, userList1, keyString, outPut = "",
-    outLine = [];
+var obj, keyName, optList, fName, lName, birthDay, eMail, phone, address, city, state, zipCode, famMem, famMemC, myFamily, mySpouse, mySelf, myFather, myMother, myBrother, mySister, mySon, myDaughter, numOfKeys, getFamName, userList, userList1, keyString, outPut = "", outLine = [];
 // Person object *DONE*
 function inPers(fName, lName, birthDay, eMail, phone, address, city, state, zipCode) {
     this.fName = fName;
@@ -19,8 +18,6 @@ function getFam() {
 }
 // function to add family member as object to local storage *DONE*
 function addFam() {
-    //    var obj, fName, lName, birthDay, eMail, phone, address, city, state, zipCode;
-
     fName = document.getElementById("fName").value;
     lName = document.getElementById("lName").value;
     birthDay = document.getElementById("birthDay").value;
@@ -193,7 +190,7 @@ function dispFam() {
     //    Create lists to check against and add to return values
     userList1 = ["fName", "lName", "birthDay", "eMail", "phone", "address", "city", "state", "zipCode"];
     userList = [
-        document.getElementById("fNameC").checked
+          document.getElementById("fNameC").checked
         , document.getElementById("lNameC").checked
         , document.getElementById("birthDayC").checked
         , document.getElementById("eMailC").checked
