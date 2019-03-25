@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html lang="en-us">
+    <head>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Who would you like to add?</legend>
+                <label>Family Member:
+                    <select id="famMem" onchange="getFam()">
+                        <option>-Select Family Member-</option>
+                        <option value="mySelf">- Self -</option>
+                        <option value="mySpouse">- Spouse -</option>
+                        <option value="myFather">- Father -</option>
+                        <option value="myMother">- Mother -</option>
+                        <option value="myBrother">- Brother -</option>
+                        <option value="mySister">- Sister -</option>
+                        <option value="mySon">- Son -</option>
+                        <option value="myDaughter">- Daughter -</option>
+                    </select></label>
+            </fieldset>
+            <!--
+({
+"Fullname: ": mySelf.name,
+"Birthday: ": mySelf.birthDay,
+"Email: ": mySelf.eMail,
+"Phone #: ": mySelf.phone,
+"Address: ": mySelf.address,
+"City: ": mySelf.city,
+"State: ": mySelf.state,
+"Zipcode: ": mySelf.zipCode
+})
+-->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name: <input type="text" name="fname" id="fName" placeholder="John"></label><br>
+                <label>Last Name: <input type="text" name="lname" id="lName" placeholder="Smith"></label><br>
+                <label>Birthday: <input type="date" name="bDay" id="birthDay"></label><br>
+                <label>Email: <input type="email" name="email" id="email" placeholder="user@domain.com"></label><br>
+                <label>Phone: <input type="tel" name="phone" id="phone#" placeholder="1234567890"></label><br>
+                <label>Address: <input type="text" name="address" id="address" placeholder="Street Number"></label><br>
+                <label>City: <input type="text" name="city" id="city" placeholder="Town"></label><br>
+                <label>State: <input type="text" name="state" id="state" placeholder="'Texas' 'TX'"></label><br>
+                <label>ZipCode: <input type="number" name="zipCode" id="zipCode" placeholder="12345"></label><br>
+                <input type="button" value="Add member" onclick="addFam();">
+            </fieldset>
+            <fieldset>
+                <legend>Get family Information</legend>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Which values would you like returned?</h3>
+                </legend>
+                <label>Select Family Member Name <br> to Get member information<br> or Remove it<br><br>
+                    <select id="famMemC" onchange="getFamC()">
+                        <option id="perm">-Select Family Member-</option>
+                    </select></label><br><br>Check attributes when getting information<br><br>
+                <label><input type="checkbox" id="fNameC" name="inCheck"> First Name<br></label>
+                <label><input type="checkbox" id="lNameC" name="inCheck" value="last"> Last Name<br></label>
+                <label><input type="checkbox" id="birthDayC" name="inCheck" value="age"> Birthday<br></label>
+                <label><input type="checkbox" id="eMailC" name="inCheck" value="eye"> Email<br></label>
+                <label><input type="checkbox" id="phoneC" name="inCheck" value="hair"> Phone #<br></label>
+                <label><input type="checkbox" id="addressC" name="inCheck" value="height"> Address<br></label>
+                <label><input type="checkbox" id="cityC" name="inCheck" value="weight"> City<br></label>
+                <label><input type="checkbox" id="stateC" name="inCheck" value="weight"> State<br></label>
+                <label><input type="checkbox" id="zipCodeC" name="inCheck" value="weight"> ZipCode<br></label>
+                <br>
+                <input type="button" value="Get member" onclick="dispFam();">
+                <input type="button" value="Delete member" onclick="delFam();">
+                <br><br>
+                <select id="s1" size="6">
+                    <option>- - - Your Stored Values - - -</option>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+    <footer>
+    </footer>
+    <script src="Scripts/test.js"></script>
+</html>

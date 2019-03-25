@@ -49,8 +49,9 @@ function storFunc() {
         rePrompt = "mySister";
     }
 
+    localStorage.setItem(mySelf.first, mySelf);
     console.log(mySelf.first);
-
+//    localStorage.setItem(mySelf.first, mySelf.stringify({"First Name: ": mySelf.first, ....}));
 }
 // this function will use check boxes in alert box to determine what info to return
 function getInfo() {
