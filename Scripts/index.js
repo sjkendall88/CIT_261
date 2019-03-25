@@ -115,6 +115,7 @@ function addFam() {
     document.getElementById("famMemC").appendChild(elm);
 
 }
+/*
 //function to populate list onchange *Not used*
 // Figure out how to loop through LS keys and DropDown Options to add new options only
 function popList() {
@@ -184,6 +185,7 @@ function popList() {
     }
     //}
 }
+*/
 //function to get family member name for display function *DONE*
 function getFamC() {
     famMemC = document.getElementById("famMemC").value;
@@ -255,7 +257,7 @@ function dispFam() {
     // add element to form <select>
     document.getElementById("s1").appendChild(elm);
 
-    callIt = popList();
+    // callIt = popList();
 }
 //function to remove family member from Option list *DONE*
 function delFam() {
